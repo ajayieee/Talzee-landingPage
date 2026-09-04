@@ -547,3 +547,86 @@ header {
     }
 }
 
+.pricingSection {
+    background: #F9FAFC;
+    padding: 90px 0;
+
+    .everythingSection_title {
+        margin-bottom: 42px;
+        h2 {
+            font-size: 60px;
+            color: #16151E;
+            text-align: center;
+            margin-bottom: 14px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #737373;
+            text-align: center;
+        }
+    }
+
+    .pricingSection_boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 24px;
+
+        .pricingSection_box {
+            padding: 37px 33px;
+            background: #fff;
+            border: 1px solid rgba(74, 58, 255, 20%);
+
+            border-radius: 21px;
+
+            h3 {
+                font-size: 24px;
+                color: #16151E;
+                font-weight: 600;
+                margin-bottom: 14px;
+            }
+
+            p {
+                font-size: 13px;
+                color: #737373;
+                margin-bottom: 18px;
+
+            }
+
+            .pricingSection_price {
+                margin-bottom: 24px;
+
+                h3 {
+                    font-size: 40px;
+                    font-weight: 700;
+
+                    span {
+                        font-size: 13px;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            ul {
+                list-style: none;
+                text-align: left;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    font-size: 16px;
+                    color: #737373;
+                    margin-bottom: 14px;
+
+                    img {
+                        width: 13px;
+                        height: 13px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+}

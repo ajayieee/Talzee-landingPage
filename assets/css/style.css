@@ -424,4 +424,73 @@ header .header__wrap .button__wrap .primary__link {
   color: #737373;
 }
 
+.pricingSection {
+  background: #F9FAFC;
+  padding: 90px 0;
+}
+.pricingSection .everythingSection_title {
+  margin-bottom: 42px;
+}
+.pricingSection .everythingSection_title h2 {
+  font-size: 60px;
+  color: #16151E;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.pricingSection .everythingSection_title p {
+  font-size: 16px;
+  color: #737373;
+  text-align: center;
+}
+.pricingSection .pricingSection_boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.pricingSection .pricingSection_boxes .pricingSection_box {
+  padding: 37px 33px;
+  background: #fff;
+  border: 1px solid rgba(74, 58, 255, 0.2);
+  border-radius: 21px;
+}
+.pricingSection .pricingSection_boxes .pricingSection_box h3 {
+  font-size: 24px;
+  color: #16151E;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.pricingSection .pricingSection_boxes .pricingSection_box p {
+  font-size: 13px;
+  color: #737373;
+  margin-bottom: 18px;
+}
+.pricingSection .pricingSection_boxes .pricingSection_box .pricingSection_price {
+  margin-bottom: 24px;
+}
+.pricingSection .pricingSection_boxes .pricingSection_box .pricingSection_price h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.pricingSection .pricingSection_boxes .pricingSection_box .pricingSection_price h3 span {
+  font-size: 13px;
+  font-weight: 300;
+}
+.pricingSection .pricingSection_boxes .pricingSection_box ul {
+  list-style: none;
+  text-align: left;
+}
+.pricingSection .pricingSection_boxes .pricingSection_box ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #737373;
+  margin-bottom: 14px;
+}
+.pricingSection .pricingSection_boxes .pricingSection_box ul li img {
+  width: 13px;
+  height: 13px;
+  object-fit: contain;
+}
+
 /*# sourceMappingURL=style.css.map */
