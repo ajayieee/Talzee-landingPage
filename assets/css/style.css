@@ -779,6 +779,7 @@ header .header__wrap .hamburger span {
 }
 .faqSection .faqSection_box .faqSection_content p {
   color: #737373;
+  padding: 2px 12px;
 }
 .faqSection .faqSection_box .faqSection_content summary {
   color: #242424;
