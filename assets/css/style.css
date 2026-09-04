@@ -283,6 +283,11 @@ header .header__wrap .hamburger span {
 .WorkSection {
   padding: 90px 0;
 }
+@media (max-width: 490px) {
+  .WorkSection {
+    padding: 55px 0;
+  }
+}
 .WorkSection .workSection_title {
   text-align: center;
   padding-bottom: 31px;
@@ -370,6 +375,11 @@ header .header__wrap .hamburger span {
   background: #F9FAFC;
   padding: 90px 0 10px 0;
 }
+@media (max-width: 490px) {
+  .BringResumeSection {
+    padding: 55px 0 10px 0;
+  }
+}
 .BringResumeSection .BringResumeSection_container {
   max-width: 1100px;
   width: 100%;
@@ -412,6 +422,12 @@ header .header__wrap .hamburger span {
   margin-bottom: 80px;
   gap: 60px;
 }
+@media (max-width: 490px) {
+  .BringResumeSection .BringResumeSection_container .BringResumeSection_main .BringResumeSection_row {
+    gap: 30px;
+    margin-bottom: 45px;
+  }
+}
 @media (max-width: 800px) {
   .BringResumeSection .BringResumeSection_container .BringResumeSection_main .BringResumeSection_row {
     grid-template-columns: 1fr;
@@ -431,9 +447,9 @@ header .header__wrap .hamburger span {
 .BringResumeSection .BringResumeSection_container .BringResumeSection_main .BringResumeSection_row .BringResumeSection_content {
   padding-top: 40px;
 }
-@media (max-width: 800px) {
+@media (max-width: 490px) {
   .BringResumeSection .BringResumeSection_container .BringResumeSection_main .BringResumeSection_row .BringResumeSection_content {
-    padding-left: 0;
+    padding-top: 25px;
   }
 }
 .BringResumeSection .BringResumeSection_container .BringResumeSection_main .BringResumeSection_row .BringResumeSection_content h3 {
@@ -474,6 +490,11 @@ header .header__wrap .hamburger span {
 
 .everythingSection {
   padding: 90px 0;
+}
+@media (max-width: 490px) {
+  .everythingSection {
+    padding: 55px 0;
+  }
 }
 .everythingSection .everythingSection_title {
   text-align: center;
@@ -579,6 +600,11 @@ header .header__wrap .hamburger span {
 .pricingSection {
   background: #F9FAFC;
   padding: 90px 0;
+}
+@media (max-width: 490px) {
+  .pricingSection {
+    padding: 55px 0;
+  }
 }
 .pricingSection .everythingSection_title {
   margin-bottom: 42px;
@@ -708,6 +734,11 @@ header .header__wrap .hamburger span {
 
 .faqSection {
   padding: 80px 0;
+}
+@media (max-width: 490px) {
+  .faqSection {
+    padding: 55px 0;
+  }
 }
 .faqSection .faqSection_box {
   display: grid;
