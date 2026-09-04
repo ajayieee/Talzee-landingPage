@@ -613,9 +613,24 @@ header .header__wrap .button__wrap .primary__link {
 .faqSection {
   padding: 80px 0;
 }
+.faqSection .faqSection_box {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+@media (max-width: 900px) {
+  .faqSection .faqSection_box {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .faqSection .faqSection_box .faqSection_title {
+    margin-bottom: 30px;
+  }
+}
 .faqSection .faqSection_box .faqSection_title h2 {
   font-size: 40px;
   color: #16151E;
+  margin-bottom: 24px;
 }
 .faqSection .faqSection_box .faqSection_title h5 {
   font-size: 16px;
@@ -625,6 +640,68 @@ header .header__wrap .button__wrap .primary__link {
 .faqSection .faqSection_box .faqSection_title h5 a {
   color: #637381;
   text-decoration: underline;
+}
+.faqSection .faqSection_box .faqSection_content ::-webkit-scrollbar {
+  inline-size: 16px;
+  block-size: 16px;
+}
+.faqSection .faqSection_box .faqSection_content ::-webkit-scrollbar-track {
+  background: transparent;
+  background-clip: padding-box;
+}
+.faqSection .faqSection_box .faqSection_content .container {
+  inline-size: min(48rem, 90%);
+  margin-inline: auto;
+}
+.faqSection .faqSection_box .faqSection_content details {
+  background: #F9FAFC;
+  border-radius: 10px;
+  inline-size: 100%;
+}
+.faqSection .faqSection_box .faqSection_content details:not(:first-child) {
+  margin-block-start: 0.25rem;
+}
+.faqSection .faqSection_box .faqSection_content details::details-content {
+  color: #242424;
+  overflow: hidden;
+  padding-inline: 1.5rem;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .faqSection .faqSection_box .faqSection_content details::details-content {
+    transition: all 0.3s ease-in-out;
+    transition-behavior: allow-discrete;
+  }
+  .faqSection .faqSection_box .faqSection_content summary svg {
+    transition: rotate 0.3s ease-in-out;
+  }
+}
+.faqSection .faqSection_box .faqSection_content details[open]::details-content {
+  padding-block: 1rem 1.5rem;
+}
+.faqSection .faqSection_box .faqSection_content details:not([open])::details-content {
+  block-size: 0;
+}
+.faqSection .faqSection_box .faqSection_content p {
+  color: #737373;
+}
+.faqSection .faqSection_box .faqSection_content summary {
+  color: #242424;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 16px;
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  transition: color 0.3s ease-in-out;
+}
+.faqSection .faqSection_box .faqSection_content summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+.faqSection .faqSection_box .faqSection_content details[open] summary svg {
+  rotate: 180deg;
 }
 
 footer {
