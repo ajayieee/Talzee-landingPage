@@ -31,17 +31,18 @@ header {
   padding: 20px 0;
 }
 header .header__wrap {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header .header__wrap a img {
+header .header__wrap > a img {
   width: 158px;
   height: 100%;
   object-fit: contain;
 }
 @media (max-width: 460px) {
-  header .header__wrap a img {
+  header .header__wrap > a img {
     width: 120px;
   }
 }
@@ -84,6 +85,89 @@ header .header__wrap .button__wrap .primary__link {
 @media (max-width: 800px) {
   header .header__wrap .button__wrap {
     display: none;
+  }
+}
+header .header__wrap .hamburger {
+  display: none;
+  width: 35px;
+  height: 35px;
+  padding: 7px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+@media (max-width: 800px) {
+  header .header__wrap .hamburger {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+}
+header .header__wrap .hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #16151E;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.2s ease;
+}
+@media (max-width: 800px) {
+  header .header__wrap .hamburger {
+    display: flex;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    max-height: 78.77px;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  header.menuOpen {
+    max-height: 500px;
+  }
+  header.menuOpen .header__wrap {
+    flex-wrap: wrap;
+  }
+  header.menuOpen nav {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+  }
+  header.menuOpen nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  header.menuOpen nav ul li {
+    margin: 0 0 18px 0;
+  }
+  header.menuOpen nav ul li a {
+    font-size: 16px;
+  }
+  header.menuOpen .button__wrap {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  header.menuOpen .button__wrap .primary__link {
+    font-size: 16px;
+  }
+  header.menuOpen .hamburger span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  header.menuOpen .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  header.menuOpen .hamburger span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
   }
 }
 
@@ -170,6 +254,7 @@ header .header__wrap .button__wrap .primary__link {
 
 .blueSection {
   background: #4A3AFF;
+  position: relative;
 }
 .blueSection .blueSection_banner {
   display: flex;
@@ -182,6 +267,17 @@ header .header__wrap .button__wrap .primary__link {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+.blueSection .blueSection_banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 75%;
+  z-index: 2;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 15%, rgba(0, 0, 0, 0.55) 40%, rgba(0, 0, 0, 0.85) 65%, #000000 100%);
+  pointer-events: none;
 }
 
 .WorkSection {

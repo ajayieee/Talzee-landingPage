@@ -27,9 +27,13 @@
                 <div class="button__wrap">
                     <a href="#" class="primary__link">Login</a>
                     <a href="#" class="primary__cta">Get Started</a>
-
-
                 </div>
+                <!-- Hamburger -->
+                <button class="hamburger" type="button" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
 
         </div>
@@ -62,11 +66,11 @@
     </section>
 
     <section class="blueSection">
-        <div class="container">
-            <div class="blueSection_banner">
-                <img src="assets/img/hero-banner.png" alt="talzee">
-            </div>
+        <!-- <div class="container"> -->
+        <div class="blueSection_banner">
+            <img src="assets/img/hero-banner.png" alt="talzee">
         </div>
+        <!-- </div> -->
 
 
     </section>
@@ -506,6 +510,15 @@
 
     </footer>
 
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const header = document.querySelector('header');
+
+        hamburger.addEventListener('click', () => {
+            header.classList.toggle('menuOpen');
+        });
+    </script>
 </body>
 
 </html>
