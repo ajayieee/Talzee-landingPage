@@ -253,7 +253,7 @@ header {
         .workSection_box {
             position: relative;
             border-radius: 8px;
-            padding: 23px;
+            padding: 30px 25px;
 
             // display: flex;
             @media(max-width:770px) {
@@ -323,7 +323,7 @@ header {
     }
 }
 
-.BringResumeSection { 
+.BringResumeSection {
     background: #F9FAFC;
     padding: 90px 0 10px 0;
 
@@ -451,6 +451,99 @@ header {
     }
 }
 
-.everythingSection{
-    
+.everythingSection {
+    padding: 90px 0;
+
+    .everythingSection_title {
+        text-align: center;
+        padding-bottom: 31px;
+
+        h2 {
+            font-size: 72px;
+            font-weight: 700;
+            color: #16151E;
+
+            max-width: 900px;
+            width: 100%;
+            margin: auto;
+
+            margin-bottom: 21px;
+
+            text-align: center;
+            line-height: 1;
+
+        }
+
+        p {
+            font-size: 16px;
+            color: #737373;
+
+            max-width: 480px;
+            width: 100%;
+            margin: auto;
+
+            line-height: 27px;
+            text-align: center;
+
+
+        }
+    }
+
+    .everythingSection_boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        @media(max-width:1024px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media(max-width:770px) {
+            grid-template-columns: 1fr;
+            // align-items: center;
+        }
+
+        .everythingSection_box {
+            border: 1px solid rgba(74, 58, 255, 20%);
+            padding: 33px 30px;
+            border-radius: 21px;
+
+            @media(max-width:770px) {
+                display: flex;
+                align-items: center;
+            }
+
+            img {
+                width: 46px;
+                height: 46px;
+                object-fit: contain;
+
+            }
+
+            .workSection_box_content {
+                margin-top: 16px;
+
+                @media(max-width:770px) {
+                    padding-left: 20px;
+                    margin-top: 0;
+
+                }
+
+                h2 {
+                    font-size: 28px;
+                    font-weight: 300;
+                    color: #16151E;
+                    margin-bottom: 12px;
+
+                }
+
+                p {
+                    font-size: 15px;
+                    color: #737373;
+                }
+
+            }
+        }
+    }
 }
+

@@ -202,7 +202,7 @@ header .header__wrap .button__wrap .primary__link {
 .WorkSection .workSection_boxes .workSection_box {
   position: relative;
   border-radius: 8px;
-  padding: 23px;
+  padding: 30px 25px;
 }
 @media (max-width: 770px) {
   .WorkSection .workSection_boxes .workSection_box {
@@ -344,6 +344,84 @@ header .header__wrap .button__wrap .primary__link {
   width: 13px;
   height: 13px;
   object-fit: contain;
+}
+
+.everythingSection {
+  padding: 90px 0;
+}
+.everythingSection .everythingSection_title {
+  text-align: center;
+  padding-bottom: 31px;
+}
+.everythingSection .everythingSection_title h2 {
+  font-size: 72px;
+  font-weight: 700;
+  color: #16151E;
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 21px;
+  text-align: center;
+  line-height: 1;
+}
+.everythingSection .everythingSection_title p {
+  font-size: 16px;
+  color: #737373;
+  max-width: 480px;
+  width: 100%;
+  margin: auto;
+  line-height: 27px;
+  text-align: center;
+}
+.everythingSection .everythingSection_boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 1024px) {
+  .everythingSection .everythingSection_boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 770px) {
+  .everythingSection .everythingSection_boxes {
+    grid-template-columns: 1fr;
+  }
+}
+.everythingSection .everythingSection_boxes .everythingSection_box {
+  border: 1px solid rgba(74, 58, 255, 0.2);
+  padding: 33px 30px;
+  border-radius: 21px;
+}
+@media (max-width: 770px) {
+  .everythingSection .everythingSection_boxes .everythingSection_box {
+    display: flex;
+    align-items: center;
+  }
+}
+.everythingSection .everythingSection_boxes .everythingSection_box img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
+.everythingSection .everythingSection_boxes .everythingSection_box .workSection_box_content {
+  margin-top: 16px;
+}
+@media (max-width: 770px) {
+  .everythingSection .everythingSection_boxes .everythingSection_box .workSection_box_content {
+    padding-left: 20px;
+    margin-top: 0;
+  }
+}
+.everythingSection .everythingSection_boxes .everythingSection_box .workSection_box_content h2 {
+  font-size: 28px;
+  font-weight: 300;
+  color: #16151E;
+  margin-bottom: 12px;
+}
+.everythingSection .everythingSection_boxes .everythingSection_box .workSection_box_content p {
+  font-size: 15px;
+  color: #737373;
 }
 
 /*# sourceMappingURL=style.css.map */
